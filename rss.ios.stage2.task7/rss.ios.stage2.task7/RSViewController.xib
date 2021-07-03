@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSchool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-mI-ByY">
+                    <rect key="frame" x="101" y="80" width="150.5" height="43"/>
+                    <accessibility key="accessibilityConfiguration" hint="name of app" identifier="RSSchool" label="RSSchool"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3t-pB-r2l">
+                    <rect key="frame" x="36" y="159" width="280.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-jz-ewh">
+                    <rect key="frame" x="36" y="223" width="280.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-ON-cTk">
+                    <rect key="frame" x="110" y="317" width="132.5" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="9zB-gX-iAx"/>
+                        <constraint firstAttribute="width" constant="156" id="eo4-Ia-ooZ"/>
+                    </constraints>
+                    <state key="normal" title="Authorize">
+                        <color key="titleColor" name="AccentColor"/>
+                    </state>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hzc-jQ-HJ6">
+                    <rect key="frame" x="15" y="555.5" width="322.5" height="61.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxu-aN-fcj">
+                            <rect key="frame" x="0.0" y="0.0" width="322.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FfL-Vh-jPD">
+                            <rect key="frame" x="0.0" y="20.5" width="322.5" height="41"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-CX-m3i">
+                                    <rect key="frame" x="0.0" y="0.0" width="107.5" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" title="1"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvm-UU-3Ob">
+                                    <rect key="frame" x="107.5" y="0.0" width="107.5" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" title="2"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-YN-c1k">
+                                    <rect key="frame" x="215" y="0.0" width="107.5" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" title="3"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uBG-jz-ewh" firstAttribute="top" secondItem="t3t-pB-r2l" secondAttribute="bottom" constant="30" id="40v-sv-mxn"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SpI-ON-cTk" secondAttribute="trailing" constant="110" id="4Yo-PH-h7S"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JGf-mI-ByY" secondAttribute="trailing" constant="101" id="6qJ-Gn-yrN"/>
+                <constraint firstItem="Hzc-jQ-HJ6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="7xy-VB-hHX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Hzc-jQ-HJ6" secondAttribute="bottom" constant="50" id="F3K-3y-Zgb"/>
+                <constraint firstItem="JGf-mI-ByY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="101" id="M11-52-guU"/>
+                <constraint firstItem="uBG-jz-ewh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="aBI-h4-tTG"/>
+                <constraint firstItem="t3t-pB-r2l" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="cey-4j-xpN"/>
+                <constraint firstItem="t3t-pB-r2l" firstAttribute="top" secondItem="JGf-mI-ByY" secondAttribute="bottom" constant="36" id="fmg-SE-80B"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uBG-jz-ewh" secondAttribute="trailing" constant="36" id="gC5-9Y-XRK"/>
+                <constraint firstItem="SpI-ON-cTk" firstAttribute="top" secondItem="uBG-jz-ewh" secondAttribute="bottom" constant="60" id="isM-1y-3lI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Hzc-jQ-HJ6" secondAttribute="trailing" constant="15" id="kYG-Sg-lzG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="t3t-pB-r2l" secondAttribute="trailing" constant="36" id="mY4-Wf-sk4"/>
+                <constraint firstItem="JGf-mI-ByY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="qL4-bL-bC0"/>
+                <constraint firstItem="SpI-ON-cTk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="110" id="xeR-nF-EE2"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
