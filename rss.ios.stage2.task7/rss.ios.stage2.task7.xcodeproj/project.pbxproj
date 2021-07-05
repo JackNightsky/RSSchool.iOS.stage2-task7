@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		040271C3268FBB6D00281EC2 /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040271C1268FBB6D00281EC2 /* RSViewController.m */; };
 		040271C4268FBB6D00281EC2 /* RSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040271C2268FBB6D00281EC2 /* RSViewController.xib */; };
+		04B87B8A2690E48D008A5569 /* RSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B87B892690E48D008A5569 /* RSTextField.m */; };
+		04B87B8E2690F391008A5569 /* RSSecureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B87B8D2690F391008A5569 /* RSSecureView.m */; };
+		04B87B9226913A3E008A5569 /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B87B9126913A3E008A5569 /* RSButton.m */; };
+		04B87B9526913AAE008A5569 /* RSNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B87B9426913AAE008A5569 /* RSNumButton.m */; };
+		04B87B992691DB9A008A5569 /* ColorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B87B982691DB9A008A5569 /* ColorSet.m */; };
 		04D9FD01268E89FB006DEF25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9FD00268E89FB006DEF25 /* AppDelegate.m */; };
 		04D9FD0C268E89FC006DEF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D9FD0B268E89FC006DEF25 /* Assets.xcassets */; };
 		04D9FD0F268E89FC006DEF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D9FD0D268E89FC006DEF25 /* LaunchScreen.storyboard */; };
@@ -19,6 +24,16 @@
 		040271C0268FBB6D00281EC2 /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
 		040271C1268FBB6D00281EC2 /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
 		040271C2268FBB6D00281EC2 /* RSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSViewController.xib; sourceTree = "<group>"; };
+		04B87B882690E48D008A5569 /* RSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTextField.h; sourceTree = "<group>"; };
+		04B87B892690E48D008A5569 /* RSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextField.m; sourceTree = "<group>"; };
+		04B87B8C2690F391008A5569 /* RSSecureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSecureView.h; sourceTree = "<group>"; };
+		04B87B8D2690F391008A5569 /* RSSecureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSecureView.m; sourceTree = "<group>"; };
+		04B87B9026913A3E008A5569 /* RSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSButton.h; sourceTree = "<group>"; };
+		04B87B9126913A3E008A5569 /* RSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSButton.m; sourceTree = "<group>"; };
+		04B87B9326913AAE008A5569 /* RSNumButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSNumButton.h; sourceTree = "<group>"; };
+		04B87B9426913AAE008A5569 /* RSNumButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSNumButton.m; sourceTree = "<group>"; };
+		04B87B972691DB9A008A5569 /* ColorSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSet.h; sourceTree = "<group>"; };
+		04B87B982691DB9A008A5569 /* ColorSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSet.m; sourceTree = "<group>"; };
 		04D9FCFC268E89FB006DEF25 /* rss.ios.stage2.task7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rss.ios.stage2.task7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D9FCFF268E89FB006DEF25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04D9FD00268E89FB006DEF25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +54,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04B87B8B2690E495008A5569 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				04B87B882690E48D008A5569 /* RSTextField.h */,
+				04B87B892690E48D008A5569 /* RSTextField.m */,
+				04B87B9026913A3E008A5569 /* RSButton.h */,
+				04B87B9126913A3E008A5569 /* RSButton.m */,
+				04B87B8C2690F391008A5569 /* RSSecureView.h */,
+				04B87B8D2690F391008A5569 /* RSSecureView.m */,
+				04B87B9326913AAE008A5569 /* RSNumButton.h */,
+				04B87B9426913AAE008A5569 /* RSNumButton.m */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		04B87B962691CE1B008A5569 /* ColorSet */ = {
+			isa = PBXGroup;
+			children = (
+				04B87B972691DB9A008A5569 /* ColorSet.h */,
+				04B87B982691DB9A008A5569 /* ColorSet.m */,
+			);
+			path = ColorSet;
+			sourceTree = "<group>";
+		};
 		04D9FCF3268E89FB006DEF25 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +97,8 @@
 		04D9FCFE268E89FB006DEF25 /* rss.ios.stage2.task7 */ = {
 			isa = PBXGroup;
 			children = (
+				04B87B962691CE1B008A5569 /* ColorSet */,
+				04B87B8B2690E495008A5569 /* CustomClasses */,
 				04D9FCFF268E89FB006DEF25 /* AppDelegate.h */,
 				04D9FD00268E89FB006DEF25 /* AppDelegate.m */,
 				040271C0268FBB6D00281EC2 /* RSViewController.h */,
@@ -140,8 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B87B992691DB9A008A5569 /* ColorSet.m in Sources */,
+				04B87B9526913AAE008A5569 /* RSNumButton.m in Sources */,
+				04B87B8E2690F391008A5569 /* RSSecureView.m in Sources */,
 				04D9FD01268E89FB006DEF25 /* AppDelegate.m in Sources */,
+				04B87B9226913A3E008A5569 /* RSButton.m in Sources */,
 				04D9FD12268E89FC006DEF25 /* main.m in Sources */,
+				04B87B8A2690E48D008A5569 /* RSTextField.m in Sources */,
 				040271C3268FBB6D00281EC2 /* RSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
