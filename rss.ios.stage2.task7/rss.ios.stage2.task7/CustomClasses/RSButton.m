@@ -36,6 +36,7 @@
 }
 
 - (void) commonInit {
+    self.alpha = 1;
     self.userInteractionEnabled = YES;
     self.layer.borderWidth = 2;
     self.layer.borderColor = [UIColor rsLittleBoyBlue].CGColor;

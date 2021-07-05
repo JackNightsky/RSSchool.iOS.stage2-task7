@@ -100,6 +100,7 @@ replacementString:(NSString *)string {
     if ([user isEqual:@"username"] && [password isEqual:@"password"]) {
         /// TODO: change visual textFields
         self.authorizeButton.userInteractionEnabled = NO;
+        self.authorizeButton.alpha = 0.5;
         self.usernameTextField.userInteractionEnabled = NO;
         self.passwordTextField.userInteractionEnabled = NO;
         
