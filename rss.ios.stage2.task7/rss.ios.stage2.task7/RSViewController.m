@@ -72,13 +72,16 @@
     NSString * password = self.passwordTextField.text;
     
     if ([user isEqual:@"username"]) {
-        [self.usernameTextField setCurrentState:ready];
+        [self.usernameTextField setCurrentState:success];
+    } else {
+        [self.usernameTextField setCurrentState:error];
     }
     
     if ([password isEqual:@"password"]) {
-        [self.passwordTextField setCurrentState:ready];
+        [self.passwordTextField setCurrentState:success];
+    } else {
+        [self.passwordTextField setCurrentState:error];
     }
-    
     
     // both cases is correct
     if ([user isEqual:@"username"] && [password isEqual:@"password"]) {
@@ -94,13 +97,7 @@
         
     }
     
-    if (![user isEqual:@"username"]) {
-        [self.usernameTextField setCurrentState:error];
-    }
     
-    if (![password isEqual:@"password"]) {
-        [self.passwordTextField setCurrentState:error];
-    }
     [self.view endEditing:true];
 }
 
@@ -129,8 +126,12 @@
         if ([_securityResult.text isEqual:@"1 3 2 "]) {
             [self.securityView setCurrentState:success];
             
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome" message:@"You are successfuly authorized!" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *refreshAction = [UIAlertAction actionWithTitle:@"Refresh" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action){
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome"
+                                                                           message:@"You are successfuly authorized!\n\n"
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *refreshAction = [UIAlertAction actionWithTitle:@"Refresh"
+                                                                    style:UIAlertActionStyleDestructive
+                                                                  handler:^(UIAlertAction * action){
                 //refresh action
                 ///all view set default
                 [self.usernameTextField reset];
