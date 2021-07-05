@@ -47,7 +47,7 @@
                         <constraint firstAttribute="height" constant="34" id="Mw4-UB-LeS"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" textContentType="username"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-jz-ewh" customClass="RSTextField">
                     <rect key="frame" x="50" y="292" width="275" height="35"/>

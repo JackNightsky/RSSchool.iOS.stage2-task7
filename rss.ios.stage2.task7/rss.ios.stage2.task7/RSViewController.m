@@ -65,6 +65,21 @@
     }
 }
 
+- (BOOL)textField:(RSTextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string {
+    if ([textField isEqual:self.usernameTextField]) {
+        if ([string rangeOfCharacterFromSet:NSCharacterSet.letterCharacterSet].length) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    // another textFields
+    return true;
+}
+
 
 // MARK: - AUTHORIZE
 - (void)authorizeButtonTapped:(UIButton *)sender {
