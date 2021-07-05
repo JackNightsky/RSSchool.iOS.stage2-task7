@@ -159,10 +159,10 @@
     <resources>
         <image name="Screen Shot 2021-07-05 at 02.56.33" width="253.5" height="451"/>
         <namedColor name="Little Boy Blue">
-            <color red="0.50187182429999999" green="0.64318293329999998" blue="0.92929702999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.50199997425079346" green="0.64300000667572021" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
-            <color red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

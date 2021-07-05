@@ -69,17 +69,15 @@
 shouldChangeCharactersInRange:(NSRange)range
 replacementString:(NSString *)string {
     if ([textField isEqual:self.usernameTextField]) {
-        if ([string rangeOfCharacterFromSet:NSCharacterSet.letterCharacterSet].length) {
-            return true;
-        }
-        else {
+        if ([string rangeOfCharacterFromSet:NSCharacterSet.letterCharacterSet.invertedSet].length) {
             return false;
+        } else {
+            return true;
         }
     }
     // another textFields
     return true;
 }
-
 
 // MARK: - AUTHORIZE
 - (void)authorizeButtonTapped:(UIButton *)sender {
